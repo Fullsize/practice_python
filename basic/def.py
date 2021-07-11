@@ -9,9 +9,6 @@ FilePath: /practice_python/basic/def.py
 # 不存在js的变量提升
 
 
-from typing import Tuple
-
-
 def callFn() -> str:
     return 'call'
 
