@@ -280,7 +280,7 @@ buttons = [{
 }]
 
 
-def renderBtn(btn:dict)-> None:
+def renderBtn(btn: dict) -> None:
     x = tkinter.Button(window, text=btn['type'], bg=btn['bg'], bd=2,
                        command=lambda:  btn['command'](btn['type']))
     x.place(x=btn['x'], y=btn['y'],
@@ -293,7 +293,6 @@ def Body():
                           bg='black', anchor='e', bd=5, fg='white')
     label.place(x=20, y=50, width=280, height=50)
     for btn in buttons:
-        print(btn['command'], btn['type'])
         renderBtn(btn)
 
 
