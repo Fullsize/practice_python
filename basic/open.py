@@ -2,10 +2,13 @@
 Author: Fullsize
 Date: 2021-07-21 17:13:47
 LastEditors: Fullsize
-LastEditTime: 2021-07-21 17:50:12
+LastEditTime: 2021-07-27 15:46:54
 FilePath: /practice_python/basic/open.py
 '''
 # 没有相对路径
+from os import close
+
+
 stra = 'Hello\nWorld!'
 fhand = open('file/1.txt')
 a = fhand.read()
@@ -25,4 +28,6 @@ def main():
 		count=count+1
 		print(i)
 	print('行数为',count)
+
 main()
+fhand.close()
